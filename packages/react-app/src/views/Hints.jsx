@@ -65,7 +65,7 @@ export default function Hints({yourLocalBalance, mainnetProvider, price, address
         <span style={{ margin: 4, backgroundColor: "#f9f9f9", padding: 4, borderRadius: 4, fontWeight: "bolder" }}>
           useBalance()
         </span>{" "}
-        hook keeps track of your balance: <b>{formatEther(yourLocalBalance?yourLocalBalance:0)}</b>
+        hook keeps track of your balance: <b>{formatEther(yourLocalBalance ? yourLocalBalance : 0)}</b>
       </div>
 
       <div style={{ marginTop: 32 }}>
@@ -112,7 +112,6 @@ export default function Hints({yourLocalBalance, mainnetProvider, price, address
         </span>
       </div>
 
-
       <div style={{ marginTop: 32 }}>
         <span style={{ marginRight: 8 }}>🔑</span>
         <span style={{ marginLeft: 4, backgroundColor: "#f1f1f1", padding: 4, borderRadius: 4, fontWeight: "bolder" }}>
@@ -122,11 +121,16 @@ export default function Hints({yourLocalBalance, mainnetProvider, price, address
         <span style={{ marginLeft: 4, backgroundColor: "#f9f9f9", padding: 4, borderRadius: 4, fontWeight: "bolder" }}>
           packages/buidler
         </span>
-        <div style={{marginTop:8}}>(use <span style={{ marginLeft: 4, backgroundColor: "#f1f1f1", padding: 4, borderRadius: 4, fontWeight: "bolder" }}>
+        <div style={{ marginTop: 8 }}>
+          (use{" "}
+          <span
+            style={{ marginLeft: 4, backgroundColor: "#f1f1f1", padding: 4, borderRadius: 4, fontWeight: "bolder" }}
+          >
             yarn run account
-          </span> to display deployer address and balance)</div>
+          </span>{" "}
+          to display deployer address and balance)
+        </div>
       </div>
-
 
       <div style={{ marginTop: 32 }}>
         <span style={{ marginRight: 8 }}>⚙️</span>
@@ -160,9 +164,6 @@ export default function Hints({yourLocalBalance, mainnetProvider, price, address
             Telegram Chat
           </a>
         </span>
-      </div>
-      <div style={{ padding: 128 }}>
-        <blink>🛠 Check out your browser's developer console for more... (inpect -> console) 🚀</blink>
       </div>
     </div>
   );
