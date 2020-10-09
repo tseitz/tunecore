@@ -14,4 +14,8 @@ contract YourContract {
     emit SetPurpose(msg.sender, purpose);
   }
 
+  function playSong(uint id) public {
+    console.log("played", id);
+  }
+
 }
