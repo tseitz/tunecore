@@ -15,7 +15,7 @@ export default function ExampleUI({address, mainnetProvider, userProvider, local
 
   //📟 Listen for broadcast events
   const setPurposeEvents = useEventListener(readContracts, "YourContract", "SetPurpose", localProvider, 1);
-  console.log("📟 SetPurpose events:",setPurposeEvents)
+  console.log('📟 SetPurpose events:', setPurposeEvents)
 
   return (
     <div>
